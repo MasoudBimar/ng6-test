@@ -19,6 +19,9 @@
     "paths": {
       "lib": [
         "dist/lib"
+      ],
+      "lib2": [
+        "dist/lib2"
       ]
     }
   }

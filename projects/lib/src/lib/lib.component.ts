@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LibService } from './lib.service';
 
 @Component({
   selector: 'lib-lib',
@@ -9,9 +10,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LibComponent implements OnInit {
 
-  constructor() { }
+  constructor(private libService: LibService) { }
 
   ngOnInit() {
+    console.log(1);
   }
 
 }

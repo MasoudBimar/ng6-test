@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LibService } from '../lib.service';
 
 @Component({
   selector: 'lib-hello',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
 
-  constructor() { }
+  constructor(private libService: LibService) { }
 
   ngOnInit() {
+    this.libService.sayHi();
   }
 
 }

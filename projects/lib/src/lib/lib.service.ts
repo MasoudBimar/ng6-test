@@ -6,4 +6,12 @@ import { Injectable } from '@angular/core';
 export class LibService {
 
   constructor() { }
+
+  public sayHi() {
+    console.log('hi');
+  }
+
+  public sayWhat(what: string) {
+    console.log(what);
+  }
 }
